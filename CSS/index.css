@@ -1,0 +1,73 @@
+*{
+    font-family: 'Fraunces', 'serif';
+    color: white;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+}
+
+body{
+    margin: 0;
+    background-color: rgb(30, 26, 49);
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculator{
+    display: grid;
+    grid-template-columns: repeat(4, 75px);
+    grid-template-rows: 160px repeat(5, 75px);
+    background-color: #202020;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 15px 10px 0px 5px #00000033;
+}
+
+button{
+    cursor: pointer;
+    margin: 3px;
+    padding: 0;
+    border-radius: 20px;
+    font-size: 1.5em;
+    border:none;
+    background-color: black;
+}
+
+button:active {
+    background-color: rgb(139, 139, 139);
+}
+
+button:focus {
+    outline: none;
+}
+.col-2{
+    grid-column: span 2;
+}
+.display{
+    grid-column: 1/-1;
+    padding: 16px;
+    display: flex;
+    margin: 5px 5px 15px;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: rgb(17, 17, 17);
+    border-radius: 20px;
+    text-align: right;
+    justify-content: space-between;
+    word-break: break-all;
+}
+
+#current-value{
+    font-size: 1.5em;
+}
+
+#previous-value{
+    font-size: 2em;
+}
